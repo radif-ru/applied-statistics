@@ -1,0 +1,20 @@
+[project]
+name = "applied-statistics"
+version = "0.1.0"
+description = "Статистические критерии, корреляционный и регрессионный анализ в Jupyter-ноутбуках"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+package = false
+exclude-newer = "2026-10-31T00:00:00Z"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+exclude = [".venv", "__pycache__"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
